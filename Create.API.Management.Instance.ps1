@@ -4,7 +4,7 @@ https://docs.microsoft.com/en-us/azure/api-management/powershell-create-service-
 #>
 
 #new RG: 
-New-AzResourceGroup -Name myResourceGroup -Location WestUS 
+New-AzResourceGroup -Name dedicatedRG -Location WestUS 
 
 #Create an API Management Service: 
-New-AzApiManagement -ResourceGroupName "myResourceGroup" -Location "West US" -Name "apim-name" -Organization "myOrganization" -AdminEmail "myEmail" -Sku "Developer" 
+New-AzApiManagement -ResourceGroupName "dedicatedRG" -Location "West US" -Name "apim-name" -Organization "myOrganization" -AdminEmail "myEmail" -Sku "Developer" 
